@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Predict Gender</title>  
+</head>
+
+<body>
+ <div>
+	<h1>Predict Gender</h1>
+
+     <form action="{{ url_for('predictEnglish')}}"method="post">
+        <input type="text" name="English name" placeholder="English name" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Gender</button>
+     </form>
+
+   <br>
+   <br>
+   {{ output }}
+
+ </div>
+
+
+</body>
+</html>
